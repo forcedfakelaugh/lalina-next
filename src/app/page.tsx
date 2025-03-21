@@ -5,30 +5,36 @@ export default function Home() {
   return (
     <>
       {/* HOME SECTION */}
-      <section className="py-16 md:py-24 bg-body">
+      <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="order-2 md:order-1">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-title mb-4">
-                Lalina <br/>kids cafe
-              </h1>
-              <h2 className="text-xl md:text-2xl text-text mb-8">
-                A cozy place for families <br/>Great food, happy kids
-              </h2>
-              <Link href="/menu" className="btn">
-                View Menu
-              </Link>
-            </div>
-            
-            <div className="flex justify-center order-1 md:order-2">
+            {/* Logo/Image on left */}
+            <div className="order-1">
               <Image 
                 src="/assets/img/logo.png" 
                 alt="Lalina Logo" 
-                width={500} 
-                height={500}
+                width={600} 
+                height={600}
                 priority
-                className="w-full max-w-md"
+                className="w-full max-w-md mx-auto"
               />
+            </div>
+            
+            {/* Text on right */}
+            <div className="order-2 text-left">
+              <h1 className="text-5xl md:text-6xl font-semibold text-primary mb-4">
+                Lalina 
+                <br />
+                kids cafe
+              </h1>
+              <h2 className="text-2xl md:text-[2.5rem] text-gray-800 mb-8 font-normal leading-tight">
+                Relax, eat and play
+                <br />
+                with your little ones.
+              </h2>
+              <Link href="/menu" className="btn px-8 py-4 text-lg">
+                View Menu
+              </Link>
             </div>
           </div>
         </div>

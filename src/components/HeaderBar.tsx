@@ -1,8 +1,7 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 const HeaderBar = () => {
@@ -14,22 +13,15 @@ const HeaderBar = () => {
   };
 
   const isActive = (path: string) => {
-    return pathname === path ? 'text-primary' : '';
+    return pathname === path ? 'text-primary border-b-2 border-primary' : '';
   };
 
   return (
-    <header className="bg-white shadow-sm">
-      <nav className="container mx-auto px-4 py-3">
+    <header className="bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
+      <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="flex-shrink-0">
-            <Image 
-              src="/assets/img/logo.png" 
-              alt="Lalina Logo" 
-              width={120} 
-              height={60} 
-              priority
-              className="h-auto"
-            />
+          <Link href="/" className="flex-shrink-0 font-semibold text-gray-800 text-lg">
+            Lalina | Now Delivery
           </Link>
           
           {/* Mobile menu button */}
@@ -45,20 +37,29 @@ const HeaderBar = () => {
           
           {/* Desktop menu */}
           <div className="hidden md:flex space-x-8">
-            <Link href="/" className={`font-medium hover:text-primary transition duration-300 ${isActive('/')}`}>
+            <Link 
+              href="/" 
+              className={`font-medium hover:text-primary transition duration-300 pb-1 ${isActive('/')}`}
+            >
               Home
             </Link>
-            <Link href="/menu" className={`font-medium hover:text-primary transition duration-300 ${isActive('/menu')}`}>
-              Menu
-            </Link>
-            <Link href="/about" className={`font-medium hover:text-primary transition duration-300 ${isActive('/about')}`}>
-              About
-            </Link>
-            <Link href="/service" className={`font-medium hover:text-primary transition duration-300 ${isActive('/service')}`}>
+            <Link 
+              href="/service" 
+              className={`font-medium hover:text-primary transition duration-300 pb-1 ${isActive('/service')}`}
+            >
               Services
             </Link>
-            <Link href="/birthday" className={`font-medium hover:text-primary transition duration-300 ${isActive('/birthday')}`}>
-              Birthday
+            <Link 
+              href="/menu" 
+              className={`font-medium hover:text-primary transition duration-300 pb-1 ${isActive('/menu')}`}
+            >
+              Menu
+            </Link>
+            <Link 
+              href="/about" 
+              className={`font-medium hover:text-primary transition duration-300 pb-1 ${isActive('/about')}`}
+            >
+              About
             </Link>
           </div>
         </div>
@@ -74,6 +75,13 @@ const HeaderBar = () => {
               Home
             </Link>
             <Link 
+              href="/service" 
+              className={`block px-2 py-1 font-medium hover:text-primary transition duration-300 ${isActive('/service')}`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Services
+            </Link>
+            <Link 
               href="/menu" 
               className={`block px-2 py-1 font-medium hover:text-primary transition duration-300 ${isActive('/menu')}`}
               onClick={() => setIsMenuOpen(false)}
@@ -86,20 +94,6 @@ const HeaderBar = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               About
-            </Link>
-            <Link 
-              href="/service" 
-              className={`block px-2 py-1 font-medium hover:text-primary transition duration-300 ${isActive('/service')}`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Services
-            </Link>
-            <Link 
-              href="/birthday" 
-              className={`block px-2 py-1 font-medium hover:text-primary transition duration-300 ${isActive('/birthday')}`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Birthday
             </Link>
           </div>
         )}
