@@ -8,6 +8,13 @@ export default function BirthdayPage() {
           Birthday Parties
         </h1>
 
+        <div className="bg-[#FF9F45] py-6 px-4 rounded-lg text-center mb-12">
+          <h2 className="text-2xl font-semibold text-white mb-3">Limited Time Offer</h2>
+          <p className="text-white mb-4">Book your 2025 birthday package now and receive a <span className="font-bold">10% Early Bird Discount</span> plus a complimentary photo session!</p>
+          <p className="text-white text-sm mb-3">Offer valid for parties booked 30+ days in advance. Subject to availability.</p>
+          <a href="http://m.me/lalinakidscafe" className="btn bg-white text-[#FF9F45] hover:bg-gray-100" target="_blank" rel="noopener noreferrer">Claim This Offer</a>
+        </div>
+
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <h2 className="text-3xl font-semibold text-title mb-6">Make Your Child's Day Special</h2>
@@ -31,12 +38,14 @@ export default function BirthdayPage() {
 
         {/* PARTY PACKAGES */}
         <div className="mb-16">
-          <h2 className="text-3xl font-semibold text-title mb-12 text-center">Birthday Party Packages</h2>
+          <h2 className="text-3xl font-semibold text-title mb-3 text-center">All-Inclusive Birthday Experiences</h2>
+          <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">Choose from our carefully crafted packages, each designed to create unforgettable celebrations</p>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
+            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
               <h3 className="text-xl font-semibold text-title mb-2 text-center">Standard Package</h3>
-              <p className="text-primary font-semibold mb-4 text-center text-lg">2,500,000 VND</p>
+              <p className="text-primary font-semibold mb-2 text-center text-2xl">2,500,000 VND</p>
+              <p className="text-center text-sm mb-4 text-gray-500">Perfect for intimate celebrations</p>
               <ul className="list-disc pl-5 text-text">
                 <li className="mb-1">2-hour private area reservation</li>
                 <li className="mb-1">Birthday decorations</li>
@@ -45,12 +54,14 @@ export default function BirthdayPage() {
                 <li className="mb-1">Party host</li>
                 <li className="mb-1">Access to playground</li>
               </ul>
+              <a href="http://m.me/lalinakidscafe" className="btn-sm block w-full text-center mt-6" target="_blank" rel="noopener noreferrer">Book This Package</a>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm border-2 border-primary">
-              <div className="bg-primary text-white text-center py-1 px-3 rounded-full text-sm font-medium mb-2 w-max mx-auto">POPULAR</div>
+            <div className="bg-white p-8 rounded-lg shadow-md border-2 border-primary transform hover:scale-105 transition-all relative z-10">
+              <div className="bg-primary text-white text-center py-1 px-3 rounded-full text-sm font-medium mb-2 w-max mx-auto">MOST POPULAR</div>
               <h3 className="text-xl font-semibold text-title mb-2 text-center">Premium Package</h3>
-              <p className="text-primary font-semibold mb-4 text-center text-lg">4,500,000 VND</p>
+              <p className="text-primary font-semibold mb-2 text-center text-2xl">4,500,000 VND</p>
+              <p className="text-center text-sm mb-4 text-gray-500">Our most popular choice for amazing celebrations</p>
               <ul className="list-disc pl-5 text-text">
                 <li className="mb-1">3-hour private area reservation</li>
                 <li className="mb-1">Deluxe decorations with theme</li>
@@ -61,11 +72,13 @@ export default function BirthdayPage() {
                 <li className="mb-1">Goodie bags for all children</li>
                 <li className="mb-1">Basic photography</li>
               </ul>
+              <a href="http://m.me/lalinakidscafe" className="btn block w-full text-center mt-6" target="_blank" rel="noopener noreferrer">Book This Package</a>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm">
+            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
               <h3 className="text-xl font-semibold text-title mb-2 text-center">VIP Package</h3>
-              <p className="text-primary font-semibold mb-4 text-center text-lg">6,500,000 VND</p>
+              <p className="text-primary font-semibold mb-2 text-center text-2xl">6,500,000 VND</p>
+              <p className="text-center text-sm mb-4 text-gray-500">The ultimate luxury birthday experience</p>
               <ul className="list-disc pl-5 text-text">
                 <li className="mb-1">4-hour exclusive venue use</li>
                 <li className="mb-1">Premium themed decorations</li>
@@ -77,6 +90,7 @@ export default function BirthdayPage() {
                 <li className="mb-1">Professional photography</li>
                 <li className="mb-1">Special surprise for birthday child</li>
               </ul>
+              <a href="http://m.me/lalinakidscafe" className="btn-sm block w-full text-center mt-6" target="_blank" rel="noopener noreferrer">Book This Package</a>
             </div>
           </div>
         </div>
@@ -147,14 +161,17 @@ export default function BirthdayPage() {
             </ol>
             
             <div className="bg-gray-50 p-6 rounded-lg">
-              <p className="font-semibold text-title mb-2">
-                Booking contact:
+              <p className="font-semibold text-title mb-2 text-xl">
+                Ready to create magical memories?
               </p>
-              <p className="text-text mb-6">
-                Phone: <a href="tel:0936285660" className="text-primary">093 628 5660</a><br />
-                Email: <a href="mailto:info@lalinakidscafe.com" className="text-primary">info@lalinakidscafe.com</a><br />
+              <p className="text-text mb-4">
+                Contact us today to plan your perfect celebration!
               </p>
-              <a href="http://m.me/lalinakidscafe" className="btn" target="_blank" rel="noopener noreferrer">Book Your Party Now</a>
+              <p className="text-text mb-5">
+                Phone: <a href="tel:0936285660" className="text-primary font-medium">093 628 5660</a><br />
+                Email: <a href="mailto:info@lalinakidscafe.com" className="text-primary font-medium">info@lalinakidscafe.com</a><br />
+              </p>
+              <a href="http://m.me/lalinakidscafe" className="btn block w-full text-center" target="_blank" rel="noopener noreferrer">Book Your Party Now</a>
             </div>
           </div>
 

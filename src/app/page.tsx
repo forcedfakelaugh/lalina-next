@@ -10,6 +10,16 @@ const ABOUT_IMAGE = { width: 600, height: 400 };
 export default function Home() {
   return (
     <>
+      {/* BIRTHDAY BANNER */}
+      <section className="py-8 bg-primary">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-semibold text-white mb-3">Make Your Child's Birthday Unforgettable</h2>
+          <p className="text-white text-lg mb-4">Premium birthday packages available with special pricing for 2025 bookings</p>
+          <Link href="/birthday" className="inline-block bg-white text-primary font-medium py-3 px-6 rounded-lg hover:bg-gray-100 transition duration-300">
+            View Birthday Packages
+          </Link>
+        </div>
+      </section>
       {/* HOME SECTION */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
@@ -114,7 +124,8 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+            <div className="bg-white p-8 rounded-lg shadow-md text-center border-2 border-primary">
+              <div className="bg-primary text-white text-xs font-bold px-2 py-1 rounded absolute right-4 top-4">POPULAR</div>
               <Image 
                 src="/assets/img/cake.svg" 
                 width={ICON_SIZE}
@@ -122,14 +133,13 @@ export default function Home() {
                 className="mx-auto mb-4" 
                 alt="Birthday" 
               />
-              <h3 className="text-xl font-semibold text-title mb-2">Birthday</h3>
-              <p className="text-text">
-                Memorable celebration packages for birthdays and special occasions.
-                <br />
-                <Link href="/birthday" className="text-primary hover:text-primary-dark underline">
-                  [Read more]
-                </Link>
+              <h3 className="text-xl font-semibold text-title mb-2">Celebration Packages</h3>
+              <p className="text-text mb-3">
+                Create magical birthday memories with our all-inclusive themed celebration packages.
               </p>
+              <Link href="/birthday" className="btn-sm block w-full text-center">
+                View Packages
+              </Link>
             </div>
           </div>
 
