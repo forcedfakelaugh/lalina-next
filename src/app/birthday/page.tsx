@@ -151,8 +151,8 @@ export default function BirthdayPage() {
                 Booking contact:
               </p>
               <p className="text-text mb-6">
-                Phone: 098.888.8828<br />
-                Messenger: <a href="http://m.me/lalinakidscafe" className="text-primary">m.me/lalinakidscafe</a>
+                Phone: <a href="tel:0936285660" className="text-primary">093 628 5660</a><br />
+                Email: <a href="mailto:info@lalinakidscafe.com" className="text-primary">info@lalinakidscafe.com</a><br />
               </p>
               <a href="http://m.me/lalinakidscafe" className="btn">Book Your Party Now</a>
             </div>

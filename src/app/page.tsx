@@ -1,6 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
+// Image size constants
+const ICON_SIZE = 64;
+const MENU_IMAGE_SIZE = 300;
+const LOGO_SIZE = 600;
+const ABOUT_IMAGE = { width: 600, height: 400 };
+
 export default function Home() {
   return (
     <>
@@ -13,8 +19,8 @@ export default function Home() {
               <Image 
                 src="/assets/img/logo.png" 
                 alt="Lalina Logo" 
-                width={600} 
-                height={600}
+                width={LOGO_SIZE} 
+                height={LOGO_SIZE}
                 priority
                 className="w-full max-w-md mx-auto"
               />
@@ -62,8 +68,8 @@ export default function Home() {
               <Image 
                 src="/assets/img/about.jpg" 
                 alt="About Lalina" 
-                width={600} 
-                height={400}
+                width={ABOUT_IMAGE.width} 
+                height={ABOUT_IMAGE.height}
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -81,7 +87,13 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-sm text-center">
-              <img src="/assets/img/swing.svg" className="w-16 h-16 mx-auto mb-4" alt="Playground" />
+              <Image 
+                src="/assets/img/swing.svg" 
+                width={ICON_SIZE}
+                height={ICON_SIZE}
+                className="mx-auto mb-4" 
+                alt="Playground" 
+              />
               <h3 className="text-xl font-semibold text-title mb-2">Playground</h3>
               <p className="text-text">
                 We offer lots of toys and playground for your little ones.
@@ -89,7 +101,13 @@ export default function Home() {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm text-center">
-              <img src="/assets/img/apron.svg" className="w-16 h-16 mx-auto mb-4" alt="Kids menu" />
+              <Image 
+                src="/assets/img/apron.svg" 
+                width={ICON_SIZE}
+                height={ICON_SIZE}
+                className="mx-auto mb-4" 
+                alt="Kids menu" 
+              />
               <h3 className="text-xl font-semibold text-title mb-2">Kids menu</h3>
               <p className="text-text">
                 We offer kids menu for your little ones, we only use the best ingredients with no
@@ -98,7 +116,13 @@ export default function Home() {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm text-center">
-              <img src="/assets/img/cake.svg" className="w-16 h-16 mx-auto mb-4" alt="Birthday" />
+              <Image 
+                src="/assets/img/cake.svg" 
+                width={ICON_SIZE}
+                height={ICON_SIZE}
+                className="mx-auto mb-4" 
+                alt="Birthday" 
+              />
               <h3 className="text-xl font-semibold text-title mb-2">Birthday</h3>
               <p className="text-text">
                 We offer private party for small or big groups.
@@ -128,8 +152,10 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="menu-item">
-              <img 
+              <Image 
                 src="/assets/img/img-pizza.jpg" 
+                width={MENU_IMAGE_SIZE}
+                height={MENU_IMAGE_SIZE}
                 alt="Pepperoni Pizza" 
                 className="menu-item-img" 
               />
@@ -142,8 +168,10 @@ export default function Home() {
             </div>
 
             <div className="menu-item">
-              <img 
+              <Image 
                 src="/assets/img/img-kids.jpg" 
+                width={MENU_IMAGE_SIZE}
+                height={MENU_IMAGE_SIZE}
                 alt="Amazing Panda" 
                 className="menu-item-img" 
               />
@@ -156,8 +184,10 @@ export default function Home() {
             </div>
 
             <div className="menu-item">
-              <img 
+              <Image 
                 src="/assets/img/img-spaghetti.jpg" 
+                width={MENU_IMAGE_SIZE}
+                height={MENU_IMAGE_SIZE}
                 alt="Spaghetti" 
                 className="menu-item-img" 
               />
