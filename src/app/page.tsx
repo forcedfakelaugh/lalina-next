@@ -33,7 +33,7 @@ export default function Home() {
                 <br />
                 kids cafe
               </h1>
-              <h2 className="text-2xl md:text-[2.5rem] text-gray-600 mb-8 font-light leading-tight">
+              <h2 className="text-3xl md:text-4xl font-semibold text-title mt-2 mb-8">
                 Where family moments
                 <br />
                 come to life.
