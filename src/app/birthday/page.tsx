@@ -154,7 +154,7 @@ export default function BirthdayPage() {
                 Phone: <a href="tel:0936285660" className="text-primary">093 628 5660</a><br />
                 Email: <a href="mailto:info@lalinakidscafe.com" className="text-primary">info@lalinakidscafe.com</a><br />
               </p>
-              <a href="http://m.me/lalinakidscafe" className="btn">Book Your Party Now</a>
+              <a href="http://m.me/lalinakidscafe" className="btn" target="_blank" rel="noopener noreferrer">Book Your Party Now</a>
             </div>
           </div>
 

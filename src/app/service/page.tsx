@@ -6,19 +6,19 @@ export default function ServicePage() {
     <section className="py-12 md:py-16">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl md:text-5xl font-semibold text-title mb-6 text-center">
-          Our Services
+          What We Offer
         </h1>
         
         <p className="text-text mb-16 text-center max-w-3xl mx-auto">
-          With the desire to become a place full of happiness and satisfaction, we are so proud to provide many extraordinary services to bring the best moments for everyone.
+          Lalina offers a variety of services designed to bring joy to families in a safe, welcoming environment.
         </p>
 
         {/* PLAYGROUND SECTION */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <h2 className="text-3xl font-semibold text-title mb-6">We provide a safe and exciting playground</h2>
+            <h2 className="text-3xl font-semibold text-title mb-6">Safe & Fun Playground</h2>
             <p className="text-text">
-              Let's explore the special corners of Lalina, where creativity and imagination is embraced. From the luxurious spa, interactive games, lovely mini kitchen with various vegetables and foods, or mini library, there is a wide range of activities that enhance children's imagination, thinking, and physical abilities while fully enjoying their time.
+              Our indoor playground features a variety of activity zones to spark children's imagination and development. From ball pits and slides to our mini kitchen and library corner, kids can explore, learn, and play in a safe, supervised environment.
             </p>
           </div>
 
@@ -46,9 +46,9 @@ export default function ServicePage() {
           </div>
 
           <div className="order-1 md:order-2">
-            <h2 className="text-3xl font-semibold text-title mb-6">We provide healthy and delicious kids menu</h2>
+            <h2 className="text-3xl font-semibold text-title mb-6">Nutritious Kids Menu</h2>
             <p className="text-text mb-4">
-              The culinary world of Lalina is also rich and diverse with a premium menu enjoyed by our lovely customers. The tasty and delicious dishes are made from super healthy ingredients and prepared by our experienced chef right from the Lalina kitchen.
+              Our chef prepares nutritious and delicious meals specifically designed for children. Using fresh, healthy ingredients without MSG or preservatives, we offer a menu that keeps kids happy while giving parents peace of mind.
             </p>
             <Link href="/menu" className="btn">View Full Menu</Link>
           </div>
@@ -57,9 +57,9 @@ export default function ServicePage() {
         {/* BIRTHDAY SECTION */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <h2 className="text-3xl font-semibold text-title mb-6">We offer private party for small or big groups</h2>
+            <h2 className="text-3xl font-semibold text-title mb-6">Birthday & Private Events</h2>
             <p className="text-text mb-4">
-              Not only a cozy and luxurious cafe and restaurant, but we also offer an amazing exclusive private party where children enjoy blowing candles, cutting the cake, and engaging in unique and attractive performances, while parents cherish the meaningful moments with wine and delectable dishes.
+              Host your child's birthday party or private event at Lalina. We offer complete party packages including decorations, food, and entertainment. Parents can relax and enjoy the celebration while we take care of all the details.
             </p>
             <Link href="/birthday" className="btn">More About Birthdays</Link>
           </div>
@@ -77,13 +77,13 @@ export default function ServicePage() {
 
         {/* CONTACT BANNER */}
         <div className="bg-gray-50 p-8 rounded-lg text-center mb-20">
-          <p className="text-text mb-4">For pricing and support</p>
-          <a href="http://m.me/lalinakidscafe" className="btn inline-block">Contact us</a>
+          <p className="text-text mb-4">Need more information or ready to book?</p>
+          <a href="http://m.me/lalinakidscafe" className="btn inline-block" target="_blank" rel="noopener noreferrer">Contact us</a>
         </div>
 
         {/* LIFE AT LALINA SECTION */}
         <div className="mb-16">
-          <h2 className="text-3xl font-semibold text-title mb-12 text-center">Life at Lalina</h2>
+          <h2 className="text-3xl font-semibold text-title mb-12 text-center">Moments at Lalina</h2>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {/* Column 1 */}

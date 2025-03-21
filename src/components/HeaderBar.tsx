@@ -20,7 +20,7 @@ const HeaderBar = () => {
     <header className="bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="flex-shrink-0 font-semibold text-gray-800 text-lg">
+          <Link href="/" className="flex-shrink-0 font-medium text-lg hover:text-primary transition duration-300">
             Lalina | Now Delivery
           </Link>
           

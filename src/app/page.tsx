@@ -33,10 +33,10 @@ export default function Home() {
                 <br />
                 kids cafe
               </h1>
-              <h2 className="text-2xl md:text-[2.5rem] text-gray-800 mb-8 font-normal leading-tight">
-                Relax, eat and play
+              <h2 className="text-2xl md:text-[2.5rem] text-gray-600 mb-8 font-light leading-tight">
+                Where family moments
                 <br />
-                with your little ones.
+                come to life.
               </h2>
               <Link href="/menu" className="btn px-8 py-4 text-lg">
                 View Menu
@@ -56,8 +56,8 @@ export default function Home() {
                 A premium family restaurant
               </h2>
               <p className="text-text mb-8">
-                Lalina is a premium family restaurant and cafe that combines safe and clean
-                interactive play areas with lots of toys. We are a place for the whole family to enjoy quality time together.
+                Lalina combines exceptional dining with thoughtfully designed play spaces in a clean, safe environment. 
+                We've created the perfect setting for families to connect, relax, and create lasting memories together.
               </p>
               <Link href="/about" className="btn">
                 Our story
@@ -82,7 +82,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <span className="block text-primary font-medium text-center">Offering</span>
           <h2 className="text-3xl font-semibold text-title text-center mt-2 mb-12">
-            Our amazing services
+            Family-friendly experiences
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -96,7 +96,7 @@ export default function Home() {
               />
               <h3 className="text-xl font-semibold text-title mb-2">Playground</h3>
               <p className="text-text">
-                We offer lots of toys and playground for your little ones.
+                Interactive play zones designed to spark imagination and development.
               </p>
             </div>
 
@@ -110,8 +110,7 @@ export default function Home() {
               />
               <h3 className="text-xl font-semibold text-title mb-2">Kids menu</h3>
               <p className="text-text">
-                We offer kids menu for your little ones, we only use the best ingredients with no
-                MSG or preservatives.
+                Nutritious and delicious meals made with fresh ingredients and no additives, specially crafted for children.
               </p>
             </div>
 
@@ -125,7 +124,7 @@ export default function Home() {
               />
               <h3 className="text-xl font-semibold text-title mb-2">Birthday</h3>
               <p className="text-text">
-                We offer private party for small or big groups.
+                Memorable celebration packages for birthdays and special occasions.
                 <br />
                 <Link href="/birthday" className="text-primary hover:text-primary-dark underline">
                   [Read more]
@@ -147,7 +146,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <span className="block text-primary font-medium text-center">Special</span>
           <h2 className="text-3xl font-semibold text-title text-center mt-2 mb-12">
-            Menu of the week
+            Featured dishes
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -162,8 +161,8 @@ export default function Home() {
               <h3 className="menu-item-name">Pepperoni Pizza</h3>
               <span className="menu-item-detail">Pizza Pepperoni</span>
               <span className="menu-item-price">180,000 vnd</span>
-              <a href="http://m.me/lalinakidscafe" className="menu-item-btn">
-                <span>Book now</span>
+              <a href="http://m.me/lalinakidscafe" className="menu-item-btn" target="_blank" rel="noopener noreferrer">
+                <span>Order now</span>
               </a>
             </div>
 
@@ -178,8 +177,8 @@ export default function Home() {
               <h3 className="menu-item-name">Amazing Panda</h3>
               <span className="menu-item-detail">Gấu trúc vui vẻ</span>
               <span className="menu-item-price">120,000 vnd</span>
-              <a href="http://m.me/lalinakidscafe" className="menu-item-btn">
-                <span>Book now</span>
+              <a href="http://m.me/lalinakidscafe" className="menu-item-btn" target="_blank" rel="noopener noreferrer">
+                <span>Order now</span>
               </a>
             </div>
 
@@ -194,8 +193,8 @@ export default function Home() {
               <h3 className="menu-item-name">Spaghetti Bolognese</h3>
               <span className="menu-item-detail">Mì Ý bò bằm</span>
               <span className="menu-item-price">130,000 vnd</span>
-              <a href="http://m.me/lalinakidscafe" className="menu-item-btn">
-                <span>Book now</span>
+              <a href="http://m.me/lalinakidscafe" className="menu-item-btn" target="_blank" rel="noopener noreferrer">
+                <span>Order now</span>
               </a>
             </div>
           </div>
@@ -215,17 +214,17 @@ export default function Home() {
             <div>
               <span className="text-primary font-medium">Let's talk</span>
               <h2 className="text-3xl md:text-4xl font-semibold text-title mt-2 mb-4">
-                Contact us
+                Get in touch
               </h2>
               <p className="text-text mb-8 md:mb-0">
-                If you want to reserve a table in our restaurant, contact us and we will attend
-                you quickly, with our 24/7 chat service.
+                Have questions or want to make a reservation? Our team is ready to assist you
+                through our responsive messaging service.
               </p>
             </div>
 
             <div className="flex justify-center md:justify-end">
-              <a href="http://m.me/lalinakidscafe" className="btn">
-                Contact us now
+              <a href="http://m.me/lalinakidscafe" className="btn" target="_blank" rel="noopener noreferrer">
+                Message us
               </a>
             </div>
           </div>
