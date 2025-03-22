@@ -1,9 +1,20 @@
+'use client';
+
+import { useState, useEffect } from 'react';
 import { getMenuItems } from '@/utils/menu-service';
 import { MenuItem } from '@/models/menu-item';
-import MenuItemModal from '@/components/MenuItemModal';
 
-export default async function MenuPage() {
-  const menuItems: MenuItem[] = await getMenuItems();
+export default function MenuPage() {
+  const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
+
+  // Fetch menu items when the component mounts
+  useEffect(() => {
+    const fetchData = async () => {
+      const items = await getMenuItems();
+      setMenuItems(items);
+    };
+    fetchData();
+  }, []);
 
   return (
     <section className="py-12 md:py-16">
@@ -24,25 +35,29 @@ export default async function MenuPage() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {menuItems.map((item) => (
             <div key={item.id} className="menu-item">
               <img src={item.photoUrl} alt={item.name} className="menu-item-img" />
               <h3 className="menu-item-name">{item.name}</h3>
               <span className="menu-item-detail">{item.description}</span>
               <span className="menu-item-price">{item.price}</span>
-              <button 
+              <a 
+                href="http://m.me/lalinakidscafe"
+                target="_blank"
+                rel="noopener noreferrer" 
                 className="menu-item-btn"
-                data-bs-toggle="modal" 
-                data-bs-target={`#menuItemModal-${item.id}`}
               >
-                <span>Details</span>
-              </button>
-              
-              {/* Modal for each menu item */}
-              <MenuItemModal item={item} />
+                Book now
+              </a>
             </div>
           ))}
+        </div>
+        
+        <div className="text-center mt-16">
+          <a href="/assets/menu.pdf" target="_blank" className="btn">
+            Full menu
+          </a>
         </div>
       </div>
     </section>

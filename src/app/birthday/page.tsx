@@ -42,55 +42,67 @@ export default function BirthdayPage() {
           <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">Choose from our carefully crafted packages, each designed to create unforgettable celebrations</p>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
-              <h3 className="text-xl font-semibold text-title mb-2 text-center">Standard Package</h3>
-              <p className="text-primary font-semibold mb-2 text-center text-2xl">2,500,000 VND</p>
-              <p className="text-center text-sm mb-4 text-gray-500">Perfect for intimate celebrations</p>
-              <ul className="list-disc pl-5 text-text">
-                <li className="mb-1">2-hour private area reservation</li>
-                <li className="mb-1">Birthday decorations</li>
-                <li className="mb-1">Birthday cake (1kg)</li>
-                <li className="mb-1">Food and drinks for 10 children</li>
-                <li className="mb-1">Party host</li>
-                <li className="mb-1">Access to playground</li>
-              </ul>
-              <a href="http://m.me/lalinakidscafe" className="btn-sm block w-full text-center mt-6" target="_blank" rel="noopener noreferrer">Book This Package</a>
+            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow flex flex-col">
+              <div>
+                <h3 className="text-xl font-semibold text-title mb-2 text-center">Standard Package</h3>
+                <p className="text-primary font-semibold mb-2 text-center text-2xl">Starting from 2,500,000 VND</p>
+                <p className="text-center text-sm mb-4 text-gray-500">Perfect for intimate celebrations</p>
+                <ul className="list-disc pl-5 text-text mb-6">
+                  <li className="mb-1">2-hour private area reservation</li>
+                  <li className="mb-1">Birthday decorations</li>
+                  <li className="mb-1">Birthday cake (1kg)</li>
+                  <li className="mb-1">Food and drinks for 10 children</li>
+                  <li className="mb-1">Party host</li>
+                  <li className="mb-1">Access to playground</li>
+                </ul>
+              </div>
+              <div className="mt-auto">
+                <a href="http://m.me/lalinakidscafe" className="btn-sm block w-full text-center" target="_blank" rel="noopener noreferrer">Book This Package</a>
+              </div>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-md border-2 border-primary transform hover:scale-105 transition-all relative z-10">
-              <div className="bg-primary text-white text-center py-1 px-3 rounded-full text-sm font-medium mb-2 w-max mx-auto">MOST POPULAR</div>
-              <h3 className="text-xl font-semibold text-title mb-2 text-center">Premium Package</h3>
-              <p className="text-primary font-semibold mb-2 text-center text-2xl">4,500,000 VND</p>
-              <p className="text-center text-sm mb-4 text-gray-500">Our most popular choice for amazing celebrations</p>
-              <ul className="list-disc pl-5 text-text">
-                <li className="mb-1">3-hour private area reservation</li>
-                <li className="mb-1">Deluxe decorations with theme</li>
-                <li className="mb-1">Custom birthday cake (2kg)</li>
-                <li className="mb-1">Food and drinks for 15 children</li>
-                <li className="mb-1">Party host and assistant</li>
-                <li className="mb-1">Organized games and activities</li>
-                <li className="mb-1">Goodie bags for all children</li>
-                <li className="mb-1">Basic photography</li>
-              </ul>
-              <a href="http://m.me/lalinakidscafe" className="btn block w-full text-center mt-6" target="_blank" rel="noopener noreferrer">Book This Package</a>
+            <div className="bg-white p-8 rounded-lg shadow-md border-2 border-primary transform hover:scale-105 transition-all relative z-10 flex flex-col">
+              <div>
+                <div className="bg-primary text-white text-center py-1 px-3 rounded-full text-sm font-medium mb-2 w-max mx-auto">MOST POPULAR</div>
+                <h3 className="text-xl font-semibold text-title mb-2 text-center">Premium Package</h3>
+                <p className="text-primary font-semibold mb-2 text-center text-2xl">Starting from 4,500,000 VND</p>
+                <p className="text-center text-sm mb-4 text-gray-500">Our most popular choice for amazing celebrations</p>
+                <ul className="list-disc pl-5 text-text mb-6">
+                  <li className="mb-1">3-hour private area reservation</li>
+                  <li className="mb-1">Deluxe decorations with theme</li>
+                  <li className="mb-1">Custom birthday cake (2kg)</li>
+                  <li className="mb-1">Food and drinks for 15 children</li>
+                  <li className="mb-1">Party host and assistant</li>
+                  <li className="mb-1">Organized games and activities</li>
+                  <li className="mb-1">Goodie bags for all children</li>
+                  <li className="mb-1">Basic photography</li>
+                </ul>
+              </div>
+              <div className="mt-auto">
+                <a href="http://m.me/lalinakidscafe" className="btn block w-full text-center" target="_blank" rel="noopener noreferrer">Book This Package</a>
+              </div>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
-              <h3 className="text-xl font-semibold text-title mb-2 text-center">VIP Package</h3>
-              <p className="text-primary font-semibold mb-2 text-center text-2xl">6,500,000 VND</p>
-              <p className="text-center text-sm mb-4 text-gray-500">The ultimate luxury birthday experience</p>
-              <ul className="list-disc pl-5 text-text">
-                <li className="mb-1">4-hour exclusive venue use</li>
-                <li className="mb-1">Premium themed decorations</li>
-                <li className="mb-1">Custom cake and cupcakes</li>
-                <li className="mb-1">Food and drinks for 20 children</li>
-                <li className="mb-1">Dedicated party team</li>
-                <li className="mb-1">Professional host and entertainment</li>
-                <li className="mb-1">Premium goodie bags</li>
-                <li className="mb-1">Professional photography</li>
-                <li className="mb-1">Special surprise for birthday child</li>
-              </ul>
-              <a href="http://m.me/lalinakidscafe" className="btn-sm block w-full text-center mt-6" target="_blank" rel="noopener noreferrer">Book This Package</a>
+            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow flex flex-col">
+              <div>
+                <h3 className="text-xl font-semibold text-title mb-2 text-center">VIP Package</h3>
+                <p className="text-primary font-semibold mb-2 text-center text-2xl">Starting from 6,500,000 VND</p>
+                <p className="text-center text-sm mb-4 text-gray-500">The ultimate luxury birthday experience</p>
+                <ul className="list-disc pl-5 text-text mb-6">
+                  <li className="mb-1">4-hour exclusive venue use</li>
+                  <li className="mb-1">Premium themed decorations</li>
+                  <li className="mb-1">Custom cake and cupcakes</li>
+                  <li className="mb-1">Food and drinks for 20 children</li>
+                  <li className="mb-1">Dedicated party team</li>
+                  <li className="mb-1">Professional host and entertainment</li>
+                  <li className="mb-1">Premium goodie bags</li>
+                  <li className="mb-1">Professional photography</li>
+                  <li className="mb-1">Special surprise for birthday child</li>
+                </ul>
+              </div>
+              <div className="mt-auto">
+                <a href="http://m.me/lalinakidscafe" className="btn-sm block w-full text-center" target="_blank" rel="noopener noreferrer">Book This Package</a>
+              </div>
             </div>
           </div>
         </div>

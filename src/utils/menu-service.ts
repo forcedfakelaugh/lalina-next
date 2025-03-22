@@ -2,11 +2,13 @@ import { MenuItem } from '@/models/menu-item';
 
 // Function to fetch all menu items
 export async function getMenuItems(): Promise<MenuItem[]> {
-  // For server components in Next.js, we need to handle this differently
   try {
-    // Import the data directly for server-side rendering
-    // This approach works well for static data in Next.js
-    const menuItems = require('../../public/assets/data/menu-items.json');
+    // In a client component, we need to fetch the data
+    const response = await fetch('/assets/data/menu-items.json');
+    if (!response.ok) {
+      throw new Error(`Failed to fetch menu items: ${response.status}`);
+    }
+    const menuItems = await response.json();
     return menuItems;
   } catch (error) {
     console.error('Error fetching menu items:', error);
