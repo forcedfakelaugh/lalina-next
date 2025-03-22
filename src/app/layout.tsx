@@ -3,6 +3,7 @@ import './globals.css';
 import HeaderBar from '@/components/HeaderBar';
 import FooterBar from '@/components/FooterBar';
 import Script from 'next/script';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: 'Lalina Kids Cafe',
@@ -26,6 +27,7 @@ export default function RootLayout({
         <HeaderBar />
         <main className="flex-grow">{children}</main>
         <FooterBar />
+        <Analytics mode="auto" />
         
         <Script id="bootstrap-modal" strategy="lazyOnload">
           {`
