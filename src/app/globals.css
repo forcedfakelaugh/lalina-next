@@ -39,7 +39,7 @@
   }
   
   .menu-item {
-    @apply relative flex flex-col bg-white rounded-lg shadow transition duration-300 p-6 transform hover:shadow-md hover:-translate-y-1;
+    @apply relative flex flex-col bg-white rounded-lg shadow-md transition duration-300 p-8 transform hover:shadow-lg hover:-translate-y-1;
   }
   
   .menu-item-img {
@@ -51,7 +51,7 @@
   }
   
   .menu-item-name {
-    @apply font-semibold text-title text-lg transition duration-300;
+    @apply font-semibold text-title text-xl transition duration-300;
   }
   
   .menu-item:hover .menu-item-name {
@@ -59,15 +59,15 @@
   }
   
   .menu-item-detail {
-    @apply text-sm my-1 text-gray-600;
+    @apply text-sm my-2 text-gray-600;
   }
   
   .menu-item-price {
-    @apply font-semibold text-title text-lg mb-5;
+    @apply font-semibold text-title text-lg mb-8;
   }
   
   .menu-item-btn {
-    @apply absolute bottom-6 right-6 text-primary hover:text-primary-dark font-medium text-base transition duration-300;
+    @apply absolute bottom-8 right-8 text-primary hover:text-primary-dark font-medium text-base transition duration-300;
   }
   
   .service-card {

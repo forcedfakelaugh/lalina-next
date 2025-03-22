@@ -17,13 +17,13 @@ export default function MenuPage() {
   }, []);
 
   return (
-    <section className="py-12 md:py-16">
-      <div className="container mx-auto px-4">
-        <h1 className="text-4xl md:text-5xl font-semibold text-title mb-8 text-center">
+    <section className="py-16 md:py-24">
+      <div className="container mx-auto px-4 md:px-8">
+        <h1 className="text-4xl md:text-5xl font-semibold text-title mb-12 text-center">
           Lalina's menu
         </h1>
 
-        <div className="text-center mb-8">
+        <div className="text-center mb-12">
           <p className="text-text">
             Our food uses the best ingredients with no MSG or preservatives. Check our{' '}
             <a href="/assets/menu.pdf" target="_blank" className="text-primary underline">
@@ -35,7 +35,7 @@ export default function MenuPage() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
           {menuItems.map((item) => (
             <div key={item.id} className="menu-item">
               <img src={item.photoUrl} alt={item.name} className="menu-item-img" />
@@ -54,8 +54,8 @@ export default function MenuPage() {
           ))}
         </div>
         
-        <div className="text-center mt-16">
-          <a href="/assets/menu.pdf" target="_blank" className="btn">
+        <div className="text-center mt-20">
+          <a href="/assets/menu.pdf" target="_blank" className="btn px-8 py-4 text-lg">
             Full menu
           </a>
         </div>
