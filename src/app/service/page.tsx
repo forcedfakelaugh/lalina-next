@@ -1,6 +1,41 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+// Define gallery images to avoid repetition
+const GALLERY_IMAGES = [
+  // Column 1
+  [
+    { src: '/assets/img/bdvn.jpg', alt: 'Life at Lalina' },
+    { src: '/assets/img/ballpitkid.jpg', alt: 'Life at Lalina' },
+    { src: '/assets/img/hpbddecor.jpg', alt: 'Life at Lalina' },
+    { src: '/assets/img/childrenslide.jpg', alt: 'Life at Lalina' },
+    { src: '/assets/img/bdvn3.jpg', alt: 'Life at Lalina' },
+  ],
+  // Column 2
+  [
+    { src: '/assets/img/bdvn2.jpg', alt: 'Life at Lalina' },
+    { src: '/assets/img/sn.jpg', alt: 'Life at Lalina' },
+    { src: '/assets/img/mama.jpg', alt: 'Life at Lalina' },
+    { src: '/assets/img/slideboy.jpg', alt: 'Life at Lalina' },
+    { src: '/assets/img/kidshug.jpg', alt: 'Life at Lalina' },
+  ],
+  // Column 3
+  [
+    { src: '/assets/img/tentgirl.jpg', alt: 'Life at Lalina' },
+    { src: '/assets/img/giadinhlina.jpg', alt: 'Life at Lalina' },
+    { src: '/assets/img/momcall.jpg', alt: 'Life at Lalina' },
+    { src: '/assets/img/kidscall.jpg', alt: 'Life at Lalina' },
+    { src: '/assets/img/meconalo.jpg', alt: 'Life at Lalina' },
+  ],
+  // Column 4
+  [
+    { src: '/assets/img/hpbd.jpg', alt: 'Life at Lalina' },
+    { src: '/assets/img/cleanball.jpg', alt: 'Life at Lalina' },
+    { src: '/assets/img/working.jpg', alt: 'Life at Lalina' },
+    { src: '/assets/img/staffclean.jpg', alt: 'Life at Lalina' },
+  ],
+];
+
 export default function ServicePage() {
   return (
     <section className="py-12 md:py-16">
@@ -86,78 +121,21 @@ export default function ServicePage() {
           <h2 className="text-3xl font-semibold text-title mb-12 text-center">Moments at Lalina</h2>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            {/* Column 1 */}
-            <div className="space-y-3">
-              <div className="overflow-hidden rounded-lg">
-                <img src="/assets/img/bdvn.jpg" alt="Life at Lalina" className="w-full object-cover hover:scale-105 transition duration-300" />
+            {GALLERY_IMAGES.map((column, columnIndex) => (
+              <div key={`column-${columnIndex}`} className="space-y-3">
+                {column.map((image, imageIndex) => (
+                  <div key={`image-${columnIndex}-${imageIndex}`} className="overflow-hidden rounded-lg">
+                    <Image 
+                      src={image.src} 
+                      alt={image.alt} 
+                      width={300} 
+                      height={200} 
+                      className="w-full object-cover hover:scale-105 transition duration-300" 
+                    />
+                  </div>
+                ))}
               </div>
-              <div className="overflow-hidden rounded-lg">
-                <img src="/assets/img/ballpitkid.jpg" alt="Life at Lalina" className="w-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-              <div className="overflow-hidden rounded-lg">
-                <img src="/assets/img/hpbddecor.jpg" alt="Life at Lalina" className="w-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-              <div className="overflow-hidden rounded-lg">
-                <img src="/assets/img/childrenslide.jpg" alt="Life at Lalina" className="w-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-              <div className="overflow-hidden rounded-lg">
-                <img src="/assets/img/bdvn3.jpg" alt="Life at Lalina" className="w-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-            </div>
-            
-            {/* Column 2 */}
-            <div className="space-y-3">
-              <div className="overflow-hidden rounded-lg">
-                <img src="/assets/img/bdvn2.jpg" alt="Life at Lalina" className="w-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-              <div className="overflow-hidden rounded-lg">
-                <img src="/assets/img/sn.jpg" alt="Life at Lalina" className="w-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-              <div className="overflow-hidden rounded-lg">
-                <img src="/assets/img/mama.jpg" alt="Life at Lalina" className="w-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-              <div className="overflow-hidden rounded-lg">
-                <img src="/assets/img/slideboy.jpg" alt="Life at Lalina" className="w-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-              <div className="overflow-hidden rounded-lg">
-                <img src="/assets/img/kidshug.jpg" alt="Life at Lalina" className="w-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-            </div>
-            
-            {/* Column 3 */}
-            <div className="space-y-3">
-              <div className="overflow-hidden rounded-lg">
-                <img src="/assets/img/tentgirl.jpg" alt="Life at Lalina" className="w-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-              <div className="overflow-hidden rounded-lg">
-                <img src="/assets/img/giadinhlina.jpg" alt="Life at Lalina" className="w-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-              <div className="overflow-hidden rounded-lg">
-                <img src="/assets/img/momcall.jpg" alt="Life at Lalina" className="w-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-              <div className="overflow-hidden rounded-lg">
-                <img src="/assets/img/kidscall.jpg" alt="Life at Lalina" className="w-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-              <div className="overflow-hidden rounded-lg">
-                <img src="/assets/img/meconalo.jpg" alt="Life at Lalina" className="w-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-            </div>
-            
-            {/* Column 4 */}
-            <div className="space-y-3">
-              <div className="overflow-hidden rounded-lg">
-                <img src="/assets/img/hpbd.jpg" alt="Life at Lalina" className="w-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-              <div className="overflow-hidden rounded-lg">
-                <img src="/assets/img/cleanball.jpg" alt="Life at Lalina" className="w-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-              <div className="overflow-hidden rounded-lg">
-                <img src="/assets/img/working.jpg" alt="Life at Lalina" className="w-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-              <div className="overflow-hidden rounded-lg">
-                <img src="/assets/img/staffclean.jpg" alt="Life at Lalina" className="w-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
