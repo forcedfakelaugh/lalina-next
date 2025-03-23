@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import Button from '@/components/Button';
+import { IMAGE_SIZES } from '@/constants';
 
 export default function NotFound() {
   return (
@@ -17,9 +19,9 @@ export default function NotFound() {
           className="w-auto h-auto max-w-[200px]"
         />
       </div>
-      <Link href="/" className="btn">
+      <Button href="/">
         Return to Home Page
-      </Link>
+      </Button>
     </div>
   );
 }

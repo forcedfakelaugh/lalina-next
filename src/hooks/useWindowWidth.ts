@@ -1,12 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-
-// Breakpoint constants
-const BREAKPOINTS = {
-  MOBILE: 768,
-  TABLET: 1024,
-};
+import { BREAKPOINTS } from '@/constants';
 
 // Hook for responsive layouts
 export function useWindowWidth() {
