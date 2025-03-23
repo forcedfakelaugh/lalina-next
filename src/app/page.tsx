@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import Button from '@/components/Button';
+import { IMAGE_SIZES } from '@/constants';
+import BirthdayBanner from '@/components/BirthdayBanner';
 
 // Image size constants
 const ICON_SIZE = 64;
@@ -11,15 +14,8 @@ export default function Home() {
   return (
     <>
       {/* BIRTHDAY BANNER */}
-      <section className="py-8 bg-primary">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-semibold text-white mb-3">Make Your Child's Birthday Unforgettable</h2>
-          <p className="text-white text-lg mb-4">Premium birthday packages available with special pricing for 2025 bookings</p>
-          <Link href="/birthday" className="inline-block bg-white text-primary font-medium py-3 px-6 rounded-lg hover:bg-gray-100 transition duration-300">
-            View Birthday Packages
-          </Link>
-        </div>
-      </section>
+      <BirthdayBanner />
+      
       {/* HOME SECTION */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
@@ -29,8 +25,8 @@ export default function Home() {
               <Image 
                 src="/assets/img/logo.png" 
                 alt="Lalina Logo" 
-                width={LOGO_SIZE} 
-                height={LOGO_SIZE}
+                width={IMAGE_SIZES.LOGO} 
+                height={IMAGE_SIZES.LOGO}
                 priority
                 className="w-full max-w-md mx-auto"
               />
@@ -48,9 +44,9 @@ export default function Home() {
                 <br />
                 come to life.
               </h2>
-              <Link href="/menu" className="btn px-8 py-4 text-lg">
+              <Button href="/menu" className="px-8 py-4 text-lg">
                 View Menu
-              </Link>
+              </Button>
             </div>
           </div>
         </div>
