@@ -131,14 +131,14 @@ export default function Home() {
                 width={ICON_SIZE}
                 height={ICON_SIZE}
                 className="mx-auto mb-4" 
-                alt="Birthday" 
+                alt="Birthday Party at Lalina Kids Cafe" 
               />
-              <h3 className="text-xl font-semibold text-title mb-2">Celebration Packages</h3>
+              <h3 className="text-xl font-semibold text-title mb-2">Kids Birthday Parties</h3>
               <p className="text-text mb-3">
-                Create magical birthday memories with our all-inclusive themed celebration packages.
+                Create magical birthday memories with our all-inclusive themed celebration packages. Perfect venue for children's parties in Hanoi.
               </p>
               <Link href="/birthday" className="btn-sm block w-full text-center">
-                View Packages
+                View Birthday Packages
               </Link>
             </div>
           </div>
