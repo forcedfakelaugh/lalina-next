@@ -45,13 +45,14 @@ export default function BirthdayPage() {
             <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow flex flex-col">
               <div>
                 <h3 className="text-xl font-semibold text-title mb-2 text-center">Standard Package</h3>
-                <p className="text-primary font-semibold mb-2 text-center text-2xl">Starting from 2,500,000 VND</p>
-                <p className="text-center text-sm mb-4 text-gray-500">Perfect for intimate celebrations</p>
+                <p className="text-primary font-semibold mb-2 text-center text-2xl">150,000 VND<span className="text-sm font-normal text-gray-500"> per child</span></p>
+                <p className="text-center text-sm mb-4 text-gray-500">Minimum 10 children, designated party area</p>
                 <ul className="list-disc pl-5 text-text mb-6">
-                  <li className="mb-1">2-hour private area reservation</li>
+                  <li className="mb-1">2-hour designated party area</li>
                   <li className="mb-1">Birthday decorations</li>
                   <li className="mb-1">Birthday cake (1kg)</li>
                   <li className="mb-1">Food and drinks for 10 children</li>
+                  <li className="mb-1">Complimentary coffee/tea for 5 adults</li>
                   <li className="mb-1">Party host</li>
                   <li className="mb-1">Access to playground</li>
                 </ul>
@@ -65,13 +66,14 @@ export default function BirthdayPage() {
               <div>
                 <div className="bg-primary text-white text-center py-1 px-3 rounded-full text-sm font-medium mb-2 w-max mx-auto">MOST POPULAR</div>
                 <h3 className="text-xl font-semibold text-title mb-2 text-center">Premium Package</h3>
-                <p className="text-primary font-semibold mb-2 text-center text-2xl">Starting from 4,500,000 VND</p>
-                <p className="text-center text-sm mb-4 text-gray-500">Our most popular choice for amazing celebrations</p>
+                <p className="text-primary font-semibold mb-2 text-center text-2xl">300,000 VND<span className="text-sm font-normal text-gray-500"> per child</span></p>
+                <p className="text-center text-sm mb-4 text-gray-500">Minimum 15 children, full venue for 3 hours</p>
                 <ul className="list-disc pl-5 text-text mb-6">
-                  <li className="mb-1">3-hour private area reservation</li>
+                  <li className="mb-1">3-hour full venue exclusive use</li>
                   <li className="mb-1">Deluxe decorations with theme</li>
                   <li className="mb-1">Custom birthday cake (2kg)</li>
                   <li className="mb-1">Food and drinks for 15 children</li>
+                  <li className="mb-1">Complimentary coffee/tea and snacks for 10 adults</li>
                   <li className="mb-1">Party host and assistant</li>
                   <li className="mb-1">Organized games and activities</li>
                   <li className="mb-1">Goodie bags for all children</li>
@@ -86,13 +88,14 @@ export default function BirthdayPage() {
             <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow flex flex-col">
               <div>
                 <h3 className="text-xl font-semibold text-title mb-2 text-center">VIP Package</h3>
-                <p className="text-primary font-semibold mb-2 text-center text-2xl">Starting from 6,500,000 VND</p>
-                <p className="text-center text-sm mb-4 text-gray-500">The ultimate luxury birthday experience</p>
+                <p className="text-primary font-semibold mb-2 text-center text-2xl">500,000 VND<span className="text-sm font-normal text-gray-500"> per child</span></p>
+                <p className="text-center text-sm mb-4 text-gray-500">Minimum 10 children, full venue rental</p>
                 <ul className="list-disc pl-5 text-text mb-6">
                   <li className="mb-1">4-hour exclusive venue use</li>
                   <li className="mb-1">Premium themed decorations</li>
                   <li className="mb-1">Custom cake and cupcakes</li>
                   <li className="mb-1">Food and drinks for 20 children</li>
+                  <li className="mb-1">Premium drink & food menu for up to 15 adults</li>
                   <li className="mb-1">Dedicated party team</li>
                   <li className="mb-1">Professional host and entertainment</li>
                   <li className="mb-1">Premium goodie bags</li>

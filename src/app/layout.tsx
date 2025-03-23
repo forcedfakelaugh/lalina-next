@@ -27,7 +27,7 @@ export default function RootLayout({
         <HeaderBar />
         <main className="flex-grow">{children}</main>
         <FooterBar />
-        <Analytics mode="auto" />
+        <Analytics/>
         
         <Script id="bootstrap-modal" strategy="lazyOnload">
           {`
