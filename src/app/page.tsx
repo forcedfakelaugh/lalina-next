@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Button from '@/components/Button';
 import { IMAGE_SIZES } from '@/constants';
 import BirthdayBanner from '@/components/BirthdayBanner';
+import FadeInOnScroll from '@/components/FadeInOnScroll';
 
 // Image size constants
 const ICON_SIZE = 64;
@@ -14,28 +15,28 @@ export default function Home() {
   return (
     <>
       {/* BIRTHDAY BANNER */}
-      <BirthdayBanner />
-      
+      {/* <BirthdayBanner /> */}
+
       {/* HOME SECTION */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             {/* Logo/Image on left */}
-            <div className="order-1">
-              <Image 
-                src="/assets/img/logo.png" 
-                alt="Lalina Logo" 
-                width={IMAGE_SIZES.LOGO} 
+            <FadeInOnScroll className="order-1">
+              <Image
+                src="/assets/img/logo.png"
+                alt="Lalina Logo"
+                width={IMAGE_SIZES.LOGO}
                 height={IMAGE_SIZES.LOGO}
                 priority
                 className="w-full max-w-md mx-auto"
               />
-            </div>
-            
+            </FadeInOnScroll>
+
             {/* Text on right */}
             <div className="order-2 text-left">
               <h1 className="text-5xl md:text-6xl font-semibold text-primary mb-4">
-                Lalina 
+                Lalina
                 <br />
                 kids cafe
               </h1>
@@ -62,7 +63,7 @@ export default function Home() {
                 A premium family restaurant
               </h2>
               <p className="text-text mb-8">
-                Lalina combines exceptional dining with thoughtfully designed play spaces in a clean, safe environment. 
+                Lalina combines exceptional dining with thoughtfully designed play spaces in a clean, safe environment.
                 We've created the perfect setting for families to connect, relax, and create lasting memories together.
               </p>
               <Link href="/about" className="btn">
@@ -71,10 +72,10 @@ export default function Home() {
             </div>
 
             <div className="rounded-lg overflow-hidden">
-              <Image 
-                src="/assets/img/about.jpg" 
-                alt="About Lalina" 
-                width={ABOUT_IMAGE.width} 
+              <Image
+                src="/assets/img/about.jpg"
+                alt="About Lalina"
+                width={ABOUT_IMAGE.width}
                 height={ABOUT_IMAGE.height}
                 className="w-full h-auto object-cover"
               />
@@ -93,12 +94,12 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-sm text-center">
-              <Image 
-                src="/assets/img/swing.svg" 
+              <Image
+                src="/assets/img/swing.svg"
                 width={ICON_SIZE}
                 height={ICON_SIZE}
-                className="mx-auto mb-4" 
-                alt="Playground" 
+                className="mx-auto mb-4"
+                alt="Playground"
               />
               <h3 className="text-xl font-semibold text-title mb-2">Playground</h3>
               <p className="text-text">
@@ -107,12 +108,12 @@ export default function Home() {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm text-center">
-              <Image 
-                src="/assets/img/apron.svg" 
+              <Image
+                src="/assets/img/apron.svg"
                 width={ICON_SIZE}
                 height={ICON_SIZE}
-                className="mx-auto mb-4" 
-                alt="Kids menu" 
+                className="mx-auto mb-4"
+                alt="Kids menu"
               />
               <h3 className="text-xl font-semibold text-title mb-2">Kids menu</h3>
               <p className="text-text">
@@ -122,12 +123,12 @@ export default function Home() {
 
             <div className="bg-white p-8 rounded-lg shadow-md text-center border-2 border-primary">
               <div className="bg-primary text-white text-xs font-bold px-2 py-1 rounded absolute right-4 top-4">POPULAR</div>
-              <Image 
-                src="/assets/img/cake.svg" 
+              <Image
+                src="/assets/img/cake.svg"
                 width={ICON_SIZE}
                 height={ICON_SIZE}
-                className="mx-auto mb-4" 
-                alt="Birthday Party at Lalina Kids Cafe" 
+                className="mx-auto mb-4"
+                alt="Birthday Party at Lalina Kids Cafe"
               />
               <h3 className="text-xl font-semibold text-title mb-2">Kids Birthday Parties</h3>
               <p className="text-text mb-3">
@@ -157,12 +158,12 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="menu-item">
-              <Image 
-                src="/assets/img/img-pizza.jpg" 
+              <Image
+                src="/assets/img/img-pizza.jpg"
                 width={MENU_IMAGE_SIZE}
                 height={MENU_IMAGE_SIZE}
-                alt="Pepperoni Pizza" 
-                className="menu-item-img" 
+                alt="Pepperoni Pizza"
+                className="menu-item-img"
               />
               <h3 className="menu-item-name">Pepperoni Pizza</h3>
               <span className="menu-item-detail">Pizza Pepperoni</span>
@@ -173,12 +174,12 @@ export default function Home() {
             </div>
 
             <div className="menu-item">
-              <Image 
-                src="/assets/img/img-kids.jpg" 
+              <Image
+                src="/assets/img/img-kids.jpg"
                 width={MENU_IMAGE_SIZE}
                 height={MENU_IMAGE_SIZE}
-                alt="Amazing Panda" 
-                className="menu-item-img" 
+                alt="Amazing Panda"
+                className="menu-item-img"
               />
               <h3 className="menu-item-name">Amazing Panda</h3>
               <span className="menu-item-detail">Gấu trúc vui vẻ</span>
@@ -189,12 +190,12 @@ export default function Home() {
             </div>
 
             <div className="menu-item">
-              <Image 
-                src="/assets/img/img-spaghetti.jpg" 
+              <Image
+                src="/assets/img/img-spaghetti.jpg"
                 width={MENU_IMAGE_SIZE}
                 height={MENU_IMAGE_SIZE}
-                alt="Spaghetti" 
-                className="menu-item-img" 
+                alt="Spaghetti"
+                className="menu-item-img"
               />
               <h3 className="menu-item-name">Spaghetti Bolognese</h3>
               <span className="menu-item-detail">Mì Ý bò bằm</span>
