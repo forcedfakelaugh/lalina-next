@@ -34,7 +34,7 @@ export default function Home() {
             </FadeInOnScroll>
 
             {/* Text on right */}
-            <FadeInOnScroll delay={0.2} className="order-2 text-left">
+            <div className="order-2 text-left">
               <h1 className="text-5xl md:text-6xl font-semibold text-primary mb-4">
                 Lalina
                 <br />
@@ -48,7 +48,7 @@ export default function Home() {
               <Button href="/menu" className="px-8 py-4 text-lg">
                 View Menu
               </Button>
-            </FadeInOnScroll>
+            </div>
           </div>
         </div>
       </section>
@@ -57,7 +57,7 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <FadeInOnScroll>
+            <div>
               <span className="text-primary font-medium">About us</span>
               <h2 className="text-3xl md:text-4xl font-semibold text-title mt-2 mb-4">
                 A premium family restaurant
@@ -69,9 +69,9 @@ export default function Home() {
               <Link href="/about" className="btn">
                 Our story
               </Link>
-            </FadeInOnScroll>
+            </div>
 
-            <FadeInOnScroll delay={0.2} className="rounded-lg overflow-hidden">
+            <div className="rounded-lg overflow-hidden">
               <Image
                 src="/assets/img/about.jpg"
                 alt="About Lalina"
@@ -79,7 +79,7 @@ export default function Home() {
                 height={ABOUT_IMAGE.height}
                 className="w-full h-auto object-cover"
               />
-            </FadeInOnScroll>
+            </div>
           </div>
         </div>
       </section>
@@ -87,65 +87,57 @@ export default function Home() {
       {/* SERVICES SECTION */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <FadeInOnScroll>
-            <span className="block text-primary font-medium text-center">Offering</span>
-            <h2 className="text-3xl font-semibold text-title text-center mt-2 mb-12">
-              Family-friendly experiences
-            </h2>
-          </FadeInOnScroll>
+          <span className="block text-primary font-medium text-center">Offering</span>
+          <h2 className="text-3xl font-semibold text-title text-center mt-2 mb-12">
+            Family-friendly experiences
+          </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <FadeInOnScroll delay={0.1}>
-              <div className="bg-white p-8 rounded-lg shadow-sm text-center">
-                <Image
-                  src="/assets/img/swing.svg"
-                  width={ICON_SIZE}
-                  height={ICON_SIZE}
-                  className="mx-auto mb-4"
-                  alt="Playground"
-                />
-                <h3 className="text-xl font-semibold text-title mb-2">Playground</h3>
-                <p className="text-text">
-                  Interactive play zones designed to spark imagination and development.
-                </p>
-              </div>
-            </FadeInOnScroll>
+            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+              <Image
+                src="/assets/img/swing.svg"
+                width={ICON_SIZE}
+                height={ICON_SIZE}
+                className="mx-auto mb-4"
+                alt="Playground"
+              />
+              <h3 className="text-xl font-semibold text-title mb-2">Playground</h3>
+              <p className="text-text">
+                Interactive play zones designed to spark imagination and development.
+              </p>
+            </div>
 
-            <FadeInOnScroll delay={0.2}>
-              <div className="bg-white p-8 rounded-lg shadow-sm text-center">
-                <Image
-                  src="/assets/img/apron.svg"
-                  width={ICON_SIZE}
-                  height={ICON_SIZE}
-                  className="mx-auto mb-4"
-                  alt="Kids menu"
-                />
-                <h3 className="text-xl font-semibold text-title mb-2">Kids menu</h3>
-                <p className="text-text">
-                  Nutritious and delicious meals made with fresh ingredients and no additives, specially crafted for children.
-                </p>
-              </div>
-            </FadeInOnScroll>
+            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+              <Image
+                src="/assets/img/apron.svg"
+                width={ICON_SIZE}
+                height={ICON_SIZE}
+                className="mx-auto mb-4"
+                alt="Kids menu"
+              />
+              <h3 className="text-xl font-semibold text-title mb-2">Kids menu</h3>
+              <p className="text-text">
+                Nutritious and delicious meals made with fresh ingredients and no additives, specially crafted for children.
+              </p>
+            </div>
 
-            <FadeInOnScroll delay={0.3}>
-              <div className="bg-white p-8 rounded-lg shadow-md text-center border-2 border-primary">
-                <div className="bg-primary text-white text-xs font-bold px-2 py-1 rounded absolute right-4 top-4">POPULAR</div>
-                <Image
-                  src="/assets/img/cake.svg"
-                  width={ICON_SIZE}
-                  height={ICON_SIZE}
-                  className="mx-auto mb-4"
-                  alt="Birthday Party at Lalina Kids Cafe"
-                />
-                <h3 className="text-xl font-semibold text-title mb-2">Kids Birthday Parties</h3>
-                <p className="text-text mb-3">
-                  Create magical birthday memories with our all-inclusive themed celebration packages. Perfect venue for children's parties in Hanoi.
-                </p>
-                <Link href="/birthday" className="btn-sm block w-full text-center">
-                  View Birthday Packages
-                </Link>
-              </div>
-            </FadeInOnScroll>
+            <div className="bg-white p-8 rounded-lg shadow-md text-center border-2 border-primary">
+              <div className="bg-primary text-white text-xs font-bold px-2 py-1 rounded absolute right-4 top-4">POPULAR</div>
+              <Image
+                src="/assets/img/cake.svg"
+                width={ICON_SIZE}
+                height={ICON_SIZE}
+                className="mx-auto mb-4"
+                alt="Birthday Party at Lalina Kids Cafe"
+              />
+              <h3 className="text-xl font-semibold text-title mb-2">Kids Birthday Parties</h3>
+              <p className="text-text mb-3">
+                Create magical birthday memories with our all-inclusive themed celebration packages. Perfect venue for children's parties in Hanoi.
+              </p>
+              <Link href="/birthday" className="btn-sm block w-full text-center">
+                View Birthday Packages
+              </Link>
+            </div>
           </div>
 
           <div className="text-center mt-12">
@@ -159,67 +151,59 @@ export default function Home() {
       {/* MENU SECTION */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <FadeInOnScroll>
-            <span className="block text-primary font-medium text-center">Special</span>
-            <h2 className="text-3xl font-semibold text-title text-center mt-2 mb-12">
-              Featured dishes
-            </h2>
-          </FadeInOnScroll>
+          <span className="block text-primary font-medium text-center">Special</span>
+          <h2 className="text-3xl font-semibold text-title text-center mt-2 mb-12">
+            Featured dishes
+          </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <FadeInOnScroll delay={0.1}>
-              <div className="menu-item">
-                <Image
-                  src="/assets/img/img-pizza.jpg"
-                  width={MENU_IMAGE_SIZE}
-                  height={MENU_IMAGE_SIZE}
-                  alt="Pepperoni Pizza"
-                  className="menu-item-img"
-                />
-                <h3 className="menu-item-name">Pepperoni Pizza</h3>
-                <span className="menu-item-detail">Pizza Pepperoni</span>
-                <span className="menu-item-price">180,000 vnd</span>
-                <a href="http://m.me/lalinakidscafe" className="menu-item-btn" target="_blank" rel="noopener noreferrer">
-                  <span>Order now</span>
-                </a>
-              </div>
-            </FadeInOnScroll>
+            <div className="menu-item">
+              <Image
+                src="/assets/img/img-pizza.jpg"
+                width={MENU_IMAGE_SIZE}
+                height={MENU_IMAGE_SIZE}
+                alt="Pepperoni Pizza"
+                className="menu-item-img"
+              />
+              <h3 className="menu-item-name">Pepperoni Pizza</h3>
+              <span className="menu-item-detail">Pizza Pepperoni</span>
+              <span className="menu-item-price">180,000 vnd</span>
+              <a href="http://m.me/lalinakidscafe" className="menu-item-btn" target="_blank" rel="noopener noreferrer">
+                <span>Order now</span>
+              </a>
+            </div>
 
-            <FadeInOnScroll delay={0.2}>
-              <div className="menu-item">
-                <Image
-                  src="/assets/img/img-kids.jpg"
-                  width={MENU_IMAGE_SIZE}
-                  height={MENU_IMAGE_SIZE}
-                  alt="Amazing Panda"
-                  className="menu-item-img"
-                />
-                <h3 className="menu-item-name">Amazing Panda</h3>
-                <span className="menu-item-detail">Gấu trúc vui vẻ</span>
-                <span className="menu-item-price">120,000 vnd</span>
-                <a href="http://m.me/lalinakidscafe" className="menu-item-btn" target="_blank" rel="noopener noreferrer">
-                  <span>Order now</span>
-                </a>
-              </div>
-            </FadeInOnScroll>
+            <div className="menu-item">
+              <Image
+                src="/assets/img/img-kids.jpg"
+                width={MENU_IMAGE_SIZE}
+                height={MENU_IMAGE_SIZE}
+                alt="Amazing Panda"
+                className="menu-item-img"
+              />
+              <h3 className="menu-item-name">Amazing Panda</h3>
+              <span className="menu-item-detail">Gấu trúc vui vẻ</span>
+              <span className="menu-item-price">120,000 vnd</span>
+              <a href="http://m.me/lalinakidscafe" className="menu-item-btn" target="_blank" rel="noopener noreferrer">
+                <span>Order now</span>
+              </a>
+            </div>
 
-            <FadeInOnScroll delay={0.3}>
-              <div className="menu-item">
-                <Image
-                  src="/assets/img/img-spaghetti.jpg"
-                  width={MENU_IMAGE_SIZE}
-                  height={MENU_IMAGE_SIZE}
-                  alt="Spaghetti"
-                  className="menu-item-img"
-                />
-                <h3 className="menu-item-name">Spaghetti Bolognese</h3>
-                <span className="menu-item-detail">Mì Ý bò bằm</span>
-                <span className="menu-item-price">130,000 vnd</span>
-                <a href="http://m.me/lalinakidscafe" className="menu-item-btn" target="_blank" rel="noopener noreferrer">
-                  <span>Order now</span>
-                </a>
-              </div>
-            </FadeInOnScroll>
+            <div className="menu-item">
+              <Image
+                src="/assets/img/img-spaghetti.jpg"
+                width={MENU_IMAGE_SIZE}
+                height={MENU_IMAGE_SIZE}
+                alt="Spaghetti"
+                className="menu-item-img"
+              />
+              <h3 className="menu-item-name">Spaghetti Bolognese</h3>
+              <span className="menu-item-detail">Mì Ý bò bằm</span>
+              <span className="menu-item-price">130,000 vnd</span>
+              <a href="http://m.me/lalinakidscafe" className="menu-item-btn" target="_blank" rel="noopener noreferrer">
+                <span>Order now</span>
+              </a>
+            </div>
           </div>
 
           <div className="text-center mt-12">
@@ -234,7 +218,7 @@ export default function Home() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <FadeInOnScroll>
+            <div>
               <span className="text-primary font-medium">Let's talk</span>
               <h2 className="text-3xl md:text-4xl font-semibold text-title mt-2 mb-4">
                 Get in touch
@@ -243,13 +227,13 @@ export default function Home() {
                 Have questions or want to make a reservation? Our team is ready to assist you
                 through our responsive messaging service.
               </p>
-            </FadeInOnScroll>
+            </div>
 
-            <FadeInOnScroll delay={0.2} className="flex justify-center md:justify-end">
+            <div className="flex justify-center md:justify-end">
               <a href="http://m.me/lalinakidscafe" className="btn" target="_blank" rel="noopener noreferrer">
                 Message us
               </a>
-            </FadeInOnScroll>
+            </div>
           </div>
         </div>
       </section>
