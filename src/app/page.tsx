@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <>
       {/* BIRTHDAY BANNER */}
-      <BirthdayBanner />
-      
+      {/* <BirthdayBanner /> */}
+
       {/* HOME SECTION */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
