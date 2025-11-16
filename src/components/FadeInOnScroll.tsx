@@ -11,16 +11,15 @@ interface FadeInOnScrollProps {
 }
 
 /**
- * FadeInOnScroll component that replicates ScrollReveal.js behavior
- * Matches the exact settings from the old Angular app:
- * - Duration: 1.7s
+ * FadeInOnScroll component with smooth scroll-triggered animations
+ * - Duration: 0.6s (snappy and modern)
  * - Easing: cubic-bezier(0.5, 0, 0, 1)
  * - Opacity and transform animations
  */
 export default function FadeInOnScroll({
   children,
   delay = 0,
-  duration = 1.7,
+  duration = 0.6,
   className = ''
 }: FadeInOnScrollProps) {
   const ref = useRef(null);
